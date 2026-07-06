@@ -1,0 +1,4 @@
+interface:
+  display_name: "Decompose Review Modules"
+  short_description: "Break a review question into clear, non-overlapping modules"
+  default_prompt: "Use $decompose-review-modules to split my research question into literature review modules."

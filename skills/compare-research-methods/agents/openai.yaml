@@ -1,0 +1,4 @@
+interface:
+  display_name: "Compare Research Methods"
+  short_description: "Build method comparison tables tied to a research question"
+  default_prompt: "Use $compare-research-methods to justify which methods fit my research question."

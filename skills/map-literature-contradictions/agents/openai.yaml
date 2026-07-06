@@ -1,0 +1,4 @@
+interface:
+  display_name: "Map Literature Contradictions"
+  short_description: "Structure conflicting findings into useful review insights"
+  default_prompt: "Use $map-literature-contradictions to analyze why these studies reach different conclusions."

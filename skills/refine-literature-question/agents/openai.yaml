@@ -1,0 +1,4 @@
+interface:
+  display_name: "Refine Literature Question"
+  short_description: "Turn a broad review topic into a sharp research question"
+  default_prompt: "Use $refine-literature-question to turn my broad literature review topic into one actionable research question."

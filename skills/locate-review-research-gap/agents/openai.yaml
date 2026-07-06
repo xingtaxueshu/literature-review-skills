@@ -1,0 +1,4 @@
+interface:
+  display_name: "Locate Review Research Gap"
+  short_description: "Convert review synthesis into a concrete research gap"
+  default_prompt: "Use $locate-review-research-gap to turn my literature review into a specific research direction."
