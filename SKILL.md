@@ -1,6 +1,6 @@
 ---
 name: literature-review-skills
-description: Use this meta-skill when installing or choosing among the five literature review skills in this repository: refine a review question, decompose review modules, compare methods, map contradictions, and locate a research gap.
+description: "Use this meta-skill when installing or choosing among the five literature review skills in this repository: refine a review question, decompose review modules, compare methods, map contradictions, and locate a research gap."
 ---
 
 # Literature Review Skills
