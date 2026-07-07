@@ -141,6 +141,17 @@ $refine-literature-question
 
 更稳妥的用法是：先让 Skill 给出结构和问题，再把你手头的真实文献逐篇放进去校正。不要把生成内容直接当成论文段落提交，也不要让 AI 编造作者、年份、期刊或 DOI。
 
+## 联系方式
+
+如果你想交流使用问题、补充案例，或讨论科研 AI 工作流，可以通过下面方式联系：
+
+- 微信号：`xingtacc`
+- 邮箱：[xingtaxueshu@outlook.com](mailto:xingtaxueshu@outlook.com)
+
+也可以扫描二维码添加微信：
+
+<img src="assets/wechat-qr.jpg" alt="星塔学术微信二维码" width="320">
+
 ## 贡献
 
 欢迎改进这些 Skills。比较有价值的贡献包括：更清晰的指令、更贴近学科场景的例子、更好的方法比较模板，以及安装说明中的错误修正。

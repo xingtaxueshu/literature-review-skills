@@ -133,6 +133,17 @@ Recommended sequence:
 
 These skills are a thinking workflow, not a ghostwriter. Use them to clarify questions, organize evidence, test logic, and improve research design. Do not use them to fabricate sources, outsource academic judgment, or submit generated prose without checking it against real literature and your own argument.
 
+## Contact
+
+Questions, examples, or collaboration ideas are welcome.
+
+- WeChat: `xingtacc`
+- Email: [xingtaxueshu@outlook.com](mailto:xingtaxueshu@outlook.com)
+
+Scan the QR code to add the WeChat account:
+
+<img src="assets/wechat-qr.jpg" alt="WeChat QR code for 星塔学术" width="320">
+
 ## Contributing
 
 Contributions are welcome if they make the workflow clearer, more practical, or easier to use. Good contributions include sharper skill instructions, better examples, field-specific templates, and corrections to installation notes. Keep examples realistic and avoid inflated claims.
