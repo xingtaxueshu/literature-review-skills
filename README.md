@@ -21,96 +21,54 @@ A practical five-skill workflow for planning, structuring, and sharpening litera
 | 4 | `map-literature-contradictions` | Turn conflicting findings into structured synthesis instead of vague disagreement. |
 | 5 | `locate-review-research-gap` | Convert the synthesis into a concrete, defensible research gap or future direction. |
 
-## Install Claude Code
+## Install This Skill Set
 
-Install Claude Code with one of the official commands for your system:
+You do not need to copy commands for each individual skill. This repository includes a root `SKILL.md` as the entry point, plus the five working skills under `skills/`.
 
-```bash
-curl -fsSL https://claude.ai/install.sh | bash
-```
+### Method 1: One-Line Install (Recommended)
 
-```bash
-brew install --cask claude-code
-```
-
-```powershell
-winget install Anthropic.ClaudeCode
-```
-
-Then start Claude Code:
+If your environment supports the Agent Skills installer, run:
 
 ```bash
-claude
+npx skills add https://github.com/xingtaxueshu/literature-review-skills
 ```
 
-## Install These Skills For Claude Code
+This is the cleanest option when you want the installer to place the skill set in the right local skills directory.
 
-For a personal install available across projects:
+### Method 2: Ask Your Agent To Install It
 
-```bash
-mkdir -p ~/.claude/skills
-cp -R skills/* ~/.claude/skills/
-```
-
-For a project-local install:
-
-```bash
-mkdir -p .claude/skills
-cp -R skills/* .claude/skills/
-```
-
-Invoke a skill directly in Claude Code, for example:
+Ask Claude Code, Codex, Cursor, or any compatible coding agent:
 
 ```text
-/refine-literature-question
+Please find and install this skill set: https://github.com/xingtaxueshu/literature-review-skills
 ```
 
-## Install Codex CLI
+The agent should clone the repository, place it in the appropriate skills directory, and make the root `SKILL.md` available as the entry point.
 
-Install Codex CLI with one of the official commands for your system:
+### Method 3: Manual Clone
+
+For Claude Code users:
 
 ```bash
-curl -fsSL https://chatgpt.com/codex/install.sh | sh
+git clone https://github.com/xingtaxueshu/literature-review-skills.git ~/.claude/skills/literature-review-skills
 ```
 
-```powershell
-powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"
-```
+For Codex users:
 
 ```bash
-npm install -g @openai/codex
+git clone https://github.com/xingtaxueshu/literature-review-skills.git ~/.agents/skills/literature-review-skills
 ```
 
-```bash
-brew install --cask codex
-```
-
-Then start Codex:
-
-```bash
-codex
-```
-
-## Install These Skills For Codex
-
-For a repository-local install:
-
-```bash
-mkdir -p .agents/skills
-cp -R skills/* .agents/skills/
-```
-
-For a user-level install available across projects:
-
-```bash
-mkdir -p ~/.agents/skills
-cp -R skills/* ~/.agents/skills/
-```
-
-Mention a skill directly in Codex, for example:
+After installation, ask your agent to use the skill set:
 
 ```text
-$refine-literature-question
+Use literature-review-skills to help me turn my broad topic into a literature review question, modules, method comparison, contradiction map, and research gap.
+```
+
+You can also call an individual skill directly when you already know the stage you are working on:
+
+```text
+Use refine-literature-question on this topic: rural e-commerce participation.
 ```
 
 ## Suggested Workflow

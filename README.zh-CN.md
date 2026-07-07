@@ -25,96 +25,54 @@
 | `map-literature-contradictions` | 把相互冲突的发现整理成可分析的差异，而不是简单写成“研究结论不一致”。  |
 | `locate-review-research-gap`    | 在已有共识、分歧和限制的基础上，定位一个更具体、更能辩护的研究空缺。   |
 
-## 安装 Claude Code
+## 安装这套 Skills
 
-可以按你的系统选择一种安装方式：
+你不需要一个一个复制 5 个 Skill。本仓库已经在根目录放了 `SKILL.md` 作为总入口，真正执行的 5 个 Skills 放在 `skills/` 目录下。
 
-```bash
-curl -fsSL https://claude.ai/install.sh | bash
-```
+### 方式一：一行安装（推荐）
 
-```bash
-brew install --cask claude-code
-```
-
-```powershell
-winget install Anthropic.ClaudeCode
-```
-
-安装后启动 Claude Code：
+如果你的环境支持 Agent Skills 安装器，可以直接运行：
 
 ```bash
-claude
+npx skills add https://github.com/xingtaxueshu/literature-review-skills
 ```
 
-## 在 Claude Code 中安装这些 Skills
+这是最省事的方式。安装器会把这套 skill 放到合适的本地 skills 目录里。
 
-安装到个人目录，多个项目都可以使用：
+### 方式二：让 AI 自己装
 
-```bash
-mkdir -p ~/.claude/skills
-cp -R skills/* ~/.claude/skills/
-```
-
-安装到当前项目，只在这个项目里使用：
-
-```bash
-mkdir -p .claude/skills
-cp -R skills/* .claude/skills/
-```
-
-在 Claude Code 中调用某个 Skill：
+对 Claude Code、Codex、Cursor 或其他兼容 Agent 说一句：
 
 ```text
-/refine-literature-question
+请帮我查找并安装这个 skill set：https://github.com/xingtaxueshu/literature-review-skills
 ```
 
-## 安装 Codex CLI
+它会自行 clone 仓库，放到对应的 skills 目录，并把根目录的 `SKILL.md` 作为入口接入。
 
-可以按你的系统选择一种安装方式：
+### 方式三：手动 clone
+
+如果你使用 Claude Code：
 
 ```bash
-curl -fsSL https://chatgpt.com/codex/install.sh | sh
+git clone https://github.com/xingtaxueshu/literature-review-skills.git ~/.claude/skills/literature-review-skills
 ```
 
-```powershell
-powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"
-```
+如果你使用 Codex：
 
 ```bash
-npm install -g @openai/codex
+git clone https://github.com/xingtaxueshu/literature-review-skills.git ~/.agents/skills/literature-review-skills
 ```
 
-```bash
-brew install --cask codex
-```
-
-安装后启动 Codex：
-
-```bash
-codex
-```
-
-## 在 Codex 中安装这些 Skills
-
-安装到项目目录，适合和当前论文或资料库一起管理：
-
-```bash
-mkdir -p .agents/skills
-cp -R skills/* .agents/skills/
-```
-
-安装到个人目录，适合跨项目使用：
-
-```bash
-mkdir -p ~/.agents/skills
-cp -R skills/* ~/.agents/skills/
-```
-
-在 Codex 中提到某个 Skill：
+装好后，可以直接对 Agent 说：
 
 ```text
-$refine-literature-question
+请使用 literature-review-skills，帮我把一个宽泛选题整理成文献综述问题、模块、方法比较、矛盾梳理和研究 gap。
+```
+
+如果你已经知道自己卡在哪一步，也可以直接点名某个 Skill：
+
+```text
+请用 refine-literature-question 帮我打磨这个主题：农村电商参与意愿。
 ```
 
 ## 推荐用法
