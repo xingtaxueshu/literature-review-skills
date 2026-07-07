@@ -110,6 +110,10 @@ git clone https://github.com/xingtaxueshu/literature-review-skills.git ~/.agents
 
 <img src="assets/wechat-qr.jpg" alt="星塔学术微信二维码" width="320">
 
+关注星塔学术微信公众号：
+
+<img src="assets/wechat-official-account-qr.png" alt="星塔学术微信公众号二维码" width="520">
+
 ## 贡献
 
 欢迎改进这些 Skills。比较有价值的贡献包括：更清晰的指令、更贴近学科场景的例子、更好的方法比较模板，以及安装说明中的错误修正。
