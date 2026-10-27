@@ -1,6 +1,8 @@
 ---
 name: compare-research-methods
-description: Compare research methods for an academic literature review, thesis proposal, or methodology section by linking each method to what it can and cannot answer. Use when the user needs to justify method choice, compare quantitative/qualitative/mixed-method designs, build a methods table, or turn "I will use this method" into a defensible argument tied to the research question.
+description: "Compare research methods for an academic literature review, thesis proposal, or methodology section by linking each method to what it can and cannot answer. Use when the user needs to justify method choice, compare quantitative/qualitative/mixed-method designs, build a methods table, or turn \"I will use this method\" into a defensible argument tied to the research question. 触发词：方法比较、研究方法选择理由、方法论证。"
+metadata:
+  version: "0.2.0"
 ---
 
 # Compare Research Methods
@@ -64,17 +66,28 @@ Provide:
 
 [Method or sequence]
 
-## Justification Paragraph
+## 段落草稿（需作者改写并核对来源）
 
-[Ready-to-use academic paragraph]
+[Draft paragraph. Start with: "以下为草稿，请改写成你自己的论证，并逐句核对来源后再使用。" Tag every literature-dependent sentence with source and status, or [需补来源]]
 
 ## Boundary Statement
 
 [What this design still cannot claim]
+
+## 待核实清单
+
+[Unverified sources, "未查到" results, sentences marked [需补来源], and inferences that still need checking; write "无" if empty]
+
+## 给作者的问题
+
+[Judgment calls that belong to the author; write "无" if empty]
 ```
+
+The output sections above, and the two closing sections, keep fixed names and order; see `references/output-contract.md` (a copy bundled in this skill folder).
 
 ## Guardrails
 
 - Do not say a method is "best" without naming the question need it satisfies.
 - Do not hide limitations; make them part of the justification.
 - Do not recommend mixed methods as a default. Use mixed methods only when the question genuinely needs complementary evidence.
+- Source integrity: follow `references/source-integrity.md`. Any statement about what prior studies did must point to a tagged source or be marked [需补来源]. Use only sources the user provided or that are verified, tag each with a status (用户提供 / 已核验 / 未核验), write "未查到" instead of completing authors, year, journal, or pages, and put anything unverified in `## 待核实清单`. If that file is not available, still apply these rules.

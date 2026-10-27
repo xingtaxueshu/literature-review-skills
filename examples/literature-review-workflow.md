@@ -1,5 +1,7 @@
 # Example: From Topic To Research Gap
 
+> **Method demonstration only; not real literature conclusions. 方法演示，非真实文献结论。** The claims, tensions, and gaps below are illustrative. They are not drawn from specific papers, and no citations are given on purpose. Do not cite them. For a real review, supply your own references and follow `references/source-integrity.md`.
+
 ## Starting Topic
 
 Broad topic: rural e-commerce participation.
@@ -28,15 +30,19 @@ Narrow the topic from "whether farmers adopt rural e-commerce" to "what explains
 
 ## Step 4: Map Contradictions
 
-| Issue | Literature Claim A | Literature Claim B | Review Implication |
-| --- | --- | --- | --- |
-| Logistics cost | High delivery cost suppresses rural e-commerce participation | Aggregation, cooperatives, or platform support can neutralize cost pressure | Ask when logistics cost becomes decisive rather than assuming a uniform effect |
-| Digital literacy | Low digital literacy blocks participation | Intermediaries and family members can compensate for weak individual skills | Distinguish individual capability from household or network capability |
-| Subsidies | Subsidies encourage entry and lower adoption barriers | Short-term subsidies can create dependence without sustained participation | Separate initial adoption effects from post-adoption persistence |
+| Issue | Literature Claim A | Literature Claim B | Review Implication | Source / verification status |
+| --- | --- | --- | --- | --- |
+| Logistics cost | High delivery cost suppresses rural e-commerce participation | Aggregation, cooperatives, or platform support can neutralize cost pressure | Ask when logistics cost becomes decisive rather than assuming a uniform effect | 无出处（方法演示，未核验） |
+| Digital literacy | Low digital literacy blocks participation | Intermediaries and family members can compensate for weak individual skills | Distinguish individual capability from household or network capability | 无出处（方法演示，未核验） |
+| Subsidies | Subsidies encourage entry and lower adoption barriers | Short-term subsidies can create dependence without sustained participation | Separate initial adoption effects from post-adoption persistence | 无出处（方法演示，未核验） |
 
 ## Step 5: Locate The Research Gap
 
 Existing studies often explain initial adoption by emphasizing infrastructure, subsidies, and basic digital skills. A sharper gap is the mechanism of sustained participation after initial adoption: why some farmers continue to sell, learn, adapt, and reinvest while others withdraw even under similar external conditions. This points to interaction effects among incentives, capability accumulation, networks, and platform or institutional support.
+
+## Open Items For The Author
+
+In a real review, every claim in Step 4 would need a source from your own reading list, a status tag (用户提供 / 已核验 / 未核验), and a check that the paper actually supports the claim. Here none of that has been done, because no real sources were used.
 
 ## What To Write Next
 

@@ -91,6 +91,21 @@ Recommended sequence:
 
 These skills are a thinking workflow, not a ghostwriter. Use them to clarify questions, organize evidence, test logic, and improve research design. Do not use them to fabricate sources, outsource academic judgment, or submit generated prose without checking it against real literature and your own argument.
 
+Since v0.2.0 the skills follow [`references/source-integrity.md`](references/source-integrity.md): only sources you provided or that have been verified are used, each is tagged (用户提供 / 已核验 / 未核验), and anything not found is written as "未查到" rather than filled in. Every output ends with a to-verify list and questions for the author, and generated paragraphs are labelled as drafts for you to rewrite and check ([output contract](references/output-contract.md)). These are process rules for the agent, not a guarantee; check every citation yourself.
+
+## Limitations And Unverified Items
+
+This is an early version. Please read the following before relying on it.
+
+- **Not evaluated.** There is no test set, no comparison against a baseline prompt, and no measurement of whether the skills improve a review. Any benefit described here is the design intent, not a result.
+- **Usage feedback has not been collected systematically.** These skills were already used by a good number of outside authors before v0.2.0 (mostly reached through our WeChat Official Account posts; the repo has 72 stars). That use was voluntary: we have not systematically collected feedback and have not run a controlled evaluation. The v0.2.0 changes have not yet been validated on real manuscripts.
+- **The example has no real sources.** `examples/` is a method demonstration; its claims are illustrative, not drawn from specific papers, and must not be cited.
+- **Install methods are not individually tested.** We have not verified the `npx skills add` command, agent-assisted install, or manual clone in each environment (Claude Code, Codex, Cursor). The `agents/openai.yaml` files are also untested. So that a skill still works if an installer copies only one skill folder, each skill folder bundles its own copy of `references/`, and the core rules are also repeated in each skill's Guardrails.
+- **Source verification depends on the agent's tools.** Without network or search access, the agent cannot verify anything and will leave sources as 用户提供 or 未核验. Crossref and OpenAlex coverage of Chinese-language and book literature is incomplete.
+- **No Chinese-literature workflow.** CNKI, Wanfang, and VIP checks are listed as manual steps for you to do; there is no dedicated process for CSSCI-style or other Chinese-language search, screening, or citation formats.
+- **Method templates lean empirical.** The method and question templates are written mostly for survey, regression, interview, and case designs. Argument-driven reviews (conceptual history, textual interpretation, intellectual history) have no dedicated templates yet.
+- **The v0.2.0 output contract is untested.** Models may still skip sections or mislabel sources; spot-check the output.
+
 ## Contact
 
 Questions, examples, or collaboration ideas are welcome.
@@ -109,6 +124,8 @@ Follow the WeChat Official Account:
 ## Contributing
 
 Contributions are welcome if they make the workflow clearer, more practical, or easier to use. Good contributions include sharper skill instructions, better examples, field-specific templates, and corrections to installation notes. Keep examples realistic and avoid inflated claims.
+
+`skills/*/references/` are copies of the root `references/`, which is the authoritative version. When you change a file in the root `references/`, copy it into every skill folder and run `bash scripts/check_references_sync.sh` (it exits non-zero if any copy differs).
 
 ## License
 

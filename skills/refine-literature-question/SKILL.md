@@ -1,6 +1,8 @@
 ---
 name: refine-literature-question
-description: Refine a broad literature review topic, research direction, thesis idea, or fuzzy academic interest into a sharp one-sentence research question. Use when the user is preparing a literature review, thesis proposal, research design, or paper outline and needs to move from a theme like "XX research review" to a concrete "why/how/mechanism" question that can guide literature search and screening.
+description: "Refine a broad literature review topic, research direction, thesis idea, or fuzzy academic interest into a sharp one-sentence research question. Use when the user is preparing a literature review, thesis proposal, research design, or paper outline and needs to move from a theme like \"XX research review\" to a concrete \"why/how/mechanism\" question that can guide literature search and screening. 触发词：综述选题、收紧研究问题、选题太宽、开题选题。"
+metadata:
+  version: "0.2.0"
 ---
 
 # Refine Literature Question
@@ -61,10 +63,21 @@ Provide:
 
 - If the user wants broader scope: ...
 - If the user wants narrower scope: ...
+
+## 待核实清单
+
+[Unverified sources, "未查到" results, sentences marked [需补来源], and inferences that still need checking; write "无" if empty]
+
+## 给作者的问题
+
+[Judgment calls that belong to the author; write "无" if empty]
 ```
+
+The output sections above, and the two closing sections, keep fixed names and order; see `references/output-contract.md` (a copy bundled in this skill folder).
 
 ## Guardrails
 
 - Do not accept `XX research review`, `current situation of XX`, or `development of XX` as the final anchor.
 - Do not invent a domain-specific claim when the user has not provided enough context; offer candidate angles and mark assumptions.
 - Treat AI as a sparring partner: generate options and pressure-test wording, but keep the user's academic judgment in charge.
+- Source integrity: follow `references/source-integrity.md`. Claims about what "existing studies" do or disagree on are assumptions until the user supplies sources; mark them. Use only sources the user provided or that are verified, tag each with a status (用户提供 / 已核验 / 未核验), write "未查到" instead of completing authors, year, journal, or pages, and put anything unverified in `## 待核实清单`. If that file is not available, still apply these rules.

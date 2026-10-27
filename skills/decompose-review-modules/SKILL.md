@@ -1,6 +1,8 @@
 ---
 name: decompose-review-modules
-description: Decompose a refined research question for a literature review into 3-5 clear, mostly non-overlapping review modules. Use when the user has a core review question and needs to build a literature review structure, reading map, subsection outline, coding scheme, or module-based search plan instead of listing papers author by author.
+description: "Decompose a refined research question for a literature review into 3-5 clear, mostly non-overlapping review modules. Use when the user has a core review question and needs to build a literature review structure, reading map, subsection outline, coding scheme, or module-based search plan instead of listing papers author by author. 触发词：综述结构、拆模块、综述提纲、检索计划。"
+metadata:
+  version: "0.2.0"
 ---
 
 # Decompose Review Modules
@@ -64,10 +66,21 @@ Provide:
 1. ...
 2. ...
 3. ...
+
+## 待核实清单
+
+[Unverified sources, "未查到" results, sentences marked [需补来源], and inferences that still need checking; write "无" if empty]
+
+## 给作者的问题
+
+[Judgment calls that belong to the author; write "无" if empty]
 ```
+
+The output sections above, and the two closing sections, keep fixed names and order; see `references/output-contract.md` (a copy bundled in this skill folder).
 
 ## Guardrails
 
 - Do not create more than five main modules unless the user explicitly asks for a large taxonomy.
 - Do not organize modules only by author, year, country, or method unless that is the analytical point.
 - When the user gives only a broad topic, first invoke question refinement logic before decomposing modules.
+- Source integrity: follow `references/source-integrity.md`. Search keywords and expected literature distribution are suggestions, not findings; do not name specific papers unless the user provided them. Use only sources the user provided or that are verified, tag each with a status (用户提供 / 已核验 / 未核验), write "未查到" instead of completing authors, year, journal, or pages, and put anything unverified in `## 待核实清单`. If that file is not available, still apply these rules.
