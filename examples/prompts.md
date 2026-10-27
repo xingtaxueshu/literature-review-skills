@@ -1,5 +1,7 @@
 # Prompt Snippets
 
+> **Method demonstration only; not real literature conclusions. 方法演示，非真实文献结论。** The topic below is a placeholder. In real use, paste your own references (full records, abstracts, or notes) and say which ones you have verified; otherwise the output will not contain literature conclusions.
+
 ## Refine A Broad Topic
 
 ```text
