@@ -83,11 +83,11 @@ Provide:
 [Judgment calls that belong to the author; write "无" if empty]
 ```
 
-The output sections above, and the two closing sections, keep fixed names and order; see `references/output-contract.md` at the repository root.
+The output sections above, and the two closing sections, keep fixed names and order; see `references/output-contract.md` (a copy bundled in this skill folder).
 
 ## Guardrails
 
 - Do not say a method is "best" without naming the question need it satisfies.
 - Do not hide limitations; make them part of the justification.
 - Do not recommend mixed methods as a default. Use mixed methods only when the question genuinely needs complementary evidence.
-- Source integrity: follow `../../references/source-integrity.md`. Any statement about what prior studies did must point to a tagged source or be marked [需补来源]. Use only sources the user provided or that are verified, tag each with a status (用户提供 / 已核验 / 未核验), write "未查到" instead of completing authors, year, journal, or pages, and put anything unverified in `## 待核实清单`. If that file is not available, still apply these rules.
+- Source integrity: follow `references/source-integrity.md`. Any statement about what prior studies did must point to a tagged source or be marked [需补来源]. Use only sources the user provided or that are verified, tag each with a status (用户提供 / 已核验 / 未核验), write "未查到" instead of completing authors, year, journal, or pages, and put anything unverified in `## 待核实清单`. If that file is not available, still apply these rules.

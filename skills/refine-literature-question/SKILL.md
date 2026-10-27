@@ -73,11 +73,11 @@ Provide:
 [Judgment calls that belong to the author; write "无" if empty]
 ```
 
-The output sections above, and the two closing sections, keep fixed names and order; see `references/output-contract.md` at the repository root.
+The output sections above, and the two closing sections, keep fixed names and order; see `references/output-contract.md` (a copy bundled in this skill folder).
 
 ## Guardrails
 
 - Do not accept `XX research review`, `current situation of XX`, or `development of XX` as the final anchor.
 - Do not invent a domain-specific claim when the user has not provided enough context; offer candidate angles and mark assumptions.
 - Treat AI as a sparring partner: generate options and pressure-test wording, but keep the user's academic judgment in charge.
-- Source integrity: follow `../../references/source-integrity.md`. Claims about what "existing studies" do or disagree on are assumptions until the user supplies sources; mark them. Use only sources the user provided or that are verified, tag each with a status (用户提供 / 已核验 / 未核验), write "未查到" instead of completing authors, year, journal, or pages, and put anything unverified in `## 待核实清单`. If that file is not available, still apply these rules.
+- Source integrity: follow `references/source-integrity.md`. Claims about what "existing studies" do or disagree on are assumptions until the user supplies sources; mark them. Use only sources the user provided or that are verified, tag each with a status (用户提供 / 已核验 / 未核验), write "未查到" instead of completing authors, year, journal, or pages, and put anything unverified in `## 待核实清单`. If that file is not available, still apply these rules.

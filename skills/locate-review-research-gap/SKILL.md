@@ -83,11 +83,11 @@ Provide:
 [Judgment calls that belong to the author; write "无" if empty]
 ```
 
-The output sections above, and the two closing sections, keep fixed names and order; see `references/output-contract.md` at the repository root.
+The output sections above, and the two closing sections, keep fixed names and order; see `references/output-contract.md` (a copy bundled in this skill folder).
 
 ## Guardrails
 
 - Do not use "few studies have examined" as the only proof of a gap; explain why the missing piece matters.
 - Do not propose an opening that is broader than the user's review question.
 - Do not confuse the user's not-yet-searched area with a true research gap; mark it as "needs verification" when evidence is insufficient.
-- Source integrity: follow `../../references/source-integrity.md`. A gap claim about what the literature lacks needs sources or must be marked "needs verification". Use only sources the user provided or that are verified, tag each with a status (用户提供 / 已核验 / 未核验), write "未查到" instead of completing authors, year, journal, or pages, and put anything unverified in `## 待核实清单`. If that file is not available, still apply these rules.
+- Source integrity: follow `references/source-integrity.md`. A gap claim about what the literature lacks needs sources or must be marked "needs verification". Use only sources the user provided or that are verified, tag each with a status (用户提供 / 已核验 / 未核验), write "未查到" instead of completing authors, year, journal, or pages, and put anything unverified in `## 待核实清单`. If that file is not available, still apply these rules.

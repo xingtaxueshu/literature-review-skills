@@ -106,9 +106,9 @@ git clone https://github.com/xingtaxueshu/literature-review-skills.git ~/.agents
 这是早期版本，使用前请先看下面几条。
 
 - **没有评测。** 没有测试集，没有和普通提示词做对照，也没有测过这些 Skills 是否真的提升综述质量。文中描述的作用是设计意图，不是实验结果。
-- **没有真实作者的反馈。** 据我们所知，还没有外部作者在真实稿件上使用过。
+- **使用反馈没有系统收集。** 这组 Skills 此前已被不少外部作者使用（主要来自公众号推文传播，仓库有 72 star），但使用是自发的，我们没有系统收集反馈，也没有做过对照评测。本次 v0.2.0 的改动尚未在真实稿件上验证。
 - **示例没有真实文献出处。** `examples/` 只是方法演示，里面的论断是示意性的，不来自具体论文，不能引用。
-- **安装方式没有逐一实测。** `npx skills add`、让 Agent 代装、手动 clone 三种方式，没有在 Claude Code、Codex、Cursor 里逐一验证；`agents/openai.yaml` 同样没有测过。Skill 里用相对路径 `../../references/` 引用规则文件，如果安装器只复制单个 skill 目录，可能找不到，所以核心规则在每个 skill 的 Guardrails 里重复写了一遍。
+- **安装方式没有逐一实测。** `npx skills add`、让 Agent 代装、手动 clone 三种方式，没有在 Claude Code、Codex、Cursor 里逐一验证；`agents/openai.yaml` 同样没有测过。为避免安装器只复制单个 skill 目录时找不到规则文件，每个 skill 目录下都自带一份 `references/` 副本，核心规则在 Guardrails 里也重复写了一遍。
 - **来源核验取决于 Agent 的工具。** 没有联网或检索能力时，Agent 无法核验，只会把来源标为“用户提供”或“未核验”。Crossref、OpenAlex 对中文文献和图书的覆盖不完整。
 - **没有中文文献的专门流程。** CNKI、万方、维普只作为需要你手工检索的步骤列出；CSSCI 等中文检索、筛选和引注格式没有专门流程。
 - **方法模板偏实证。** 问题和方法模板主要针对问卷、回归、访谈和案例设计。概念史、文本阐释、思想史这类论证型综述还没有专门模板。
@@ -132,6 +132,8 @@ git clone https://github.com/xingtaxueshu/literature-review-skills.git ~/.agents
 ## 贡献
 
 欢迎改进这些 Skills。比较有价值的贡献包括：更清晰的指令、更贴近学科场景的例子、更好的方法比较模板，以及安装说明中的错误修正。
+
+`skills/*/references/` 是根目录 `references/` 的副本，根目录版本为权威版本。修改根 `references/` 里的文件后，需要同步复制到每个 skill 目录，并运行 `bash scripts/check_references_sync.sh` 校验（有副本不一致时脚本以非零状态退出）。
 
 提交修改时，请保持语气克制，避免夸大工具作用。这个项目关心的是研究过程是否更清楚，不是把 AI 包装成学术捷径。
 
