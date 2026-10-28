@@ -116,7 +116,14 @@ git clone https://github.com/xingtaxueshu/literature-review-skills.git ~/.agents
 
 ## 联系方式
 
-如果你想交流使用问题、补充案例，或讨论科研 AI 工作流，欢迎通过 [GitHub Issues](https://github.com/xingtaxueshu/literature-review-skills/issues/new/choose) 提交使用反馈，也可以发邮件到 [xingtaxueshu@outlook.com](mailto:xingtaxueshu@outlook.com)。
+如果你想交流使用问题、补充案例，或讨论科研 AI 工作流，欢迎通过 [GitHub Issues](https://github.com/xingtaxueshu/literature-review-skills/issues/new/choose) 提交使用反馈，也可以通过下面方式联系：
+
+- 微信号：`xingtacc`
+- 邮箱：[xingtaxueshu@outlook.com](mailto:xingtaxueshu@outlook.com)
+
+也可以扫描二维码添加微信：
+
+<img src="assets/wechat-qr.jpg" alt="星塔学术微信二维码" width="260">
 
 关注微信公众号 **“星塔学术”**（扫描二维码，或在微信里搜索），可以看到使用演示与更新说明：
 

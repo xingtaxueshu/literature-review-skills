@@ -4,7 +4,7 @@
 
 ## 未发布（Unreleased）
 
-仅文档与仓库设置类改动，不涉及 skill 内容：README 中英文去掉具体 star 数；联系方式改为 GitHub Issues、邮箱和公众号入口，不再公开个人微信号；公众号二维码缩小；新增“相关项目”；新增使用反馈 Issue 模板和 `SECURITY.md`。
+仅文档与仓库设置类改动，不涉及 skill 内容：README 中英文去掉具体 star 数；联系方式保留个人微信号、邮箱，并加上 GitHub Issues 与公众号入口；两个二维码缩小；新增“相关项目”；新增使用反馈 Issue 模板和 `SECURITY.md`。
 
 ## v0.2.0
 

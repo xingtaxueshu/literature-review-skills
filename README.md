@@ -108,7 +108,14 @@ This is an early version. Please read the following before relying on it.
 
 ## Contact
 
-Questions, examples, or collaboration ideas are welcome. Please use [GitHub Issues](https://github.com/xingtaxueshu/literature-review-skills/issues/new/choose) for usage feedback, or email [xingtaxueshu@outlook.com](mailto:xingtaxueshu@outlook.com).
+Questions, examples, or collaboration ideas are welcome. Please use [GitHub Issues](https://github.com/xingtaxueshu/literature-review-skills/issues/new/choose) for usage feedback.
+
+- WeChat: `xingtacc`
+- Email: [xingtaxueshu@outlook.com](mailto:xingtaxueshu@outlook.com)
+
+Scan the QR code to add the WeChat account:
+
+<img src="assets/wechat-qr.jpg" alt="WeChat QR code for 星塔学术" width="260">
 
 Follow the WeChat Official Account **星塔学术** (scan the QR code, or search for it in WeChat) for walkthroughs and updates:
 
