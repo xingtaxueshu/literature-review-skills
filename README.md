@@ -98,7 +98,7 @@ Since v0.2.0 the skills follow [`references/source-integrity.md`](references/sou
 This is an early version. Please read the following before relying on it.
 
 - **Not evaluated.** There is no test set, no comparison against a baseline prompt, and no measurement of whether the skills improve a review. Any benefit described here is the design intent, not a result.
-- **Usage feedback has not been collected systematically.** These skills were already used by a good number of outside authors before v0.2.0 (mostly reached through our WeChat Official Account posts; the repo has 72 stars). That use was voluntary: we have not systematically collected feedback and have not run a controlled evaluation. The v0.2.0 changes have not yet been validated on real manuscripts.
+- **Usage feedback has not been collected systematically.** These skills were already used by a good number of outside authors before v0.2.0 (mostly reached through our WeChat Official Account posts). That use was voluntary: we have not systematically collected feedback and have not run a controlled evaluation. The v0.2.0 changes have not yet been validated on real manuscripts.
 - **The example has no real sources.** `examples/` is a method demonstration; its claims are illustrative, not drawn from specific papers, and must not be cited.
 - **Install methods are not individually tested.** We have not verified the `npx skills add` command, agent-assisted install, or manual clone in each environment (Claude Code, Codex, Cursor). The `agents/openai.yaml` files are also untested. So that a skill still works if an installer copies only one skill folder, each skill folder bundles its own copy of `references/`, and the core rules are also repeated in each skill's Guardrails.
 - **Source verification depends on the agent's tools.** Without network or search access, the agent cannot verify anything and will leave sources as 用户提供 or 未核验. Crossref and OpenAlex coverage of Chinese-language and book literature is incomplete.
@@ -108,18 +108,18 @@ This is an early version. Please read the following before relying on it.
 
 ## Contact
 
-Questions, examples, or collaboration ideas are welcome.
+Questions, examples, or collaboration ideas are welcome. Please use [GitHub Issues](https://github.com/xingtaxueshu/literature-review-skills/issues/new/choose) for usage feedback.
 
 - WeChat: `xingtacc`
 - Email: [xingtaxueshu@outlook.com](mailto:xingtaxueshu@outlook.com)
 
 Scan the QR code to add the WeChat account:
 
-<img src="assets/wechat-qr.jpg" alt="WeChat QR code for 星塔学术" width="320">
+<img src="assets/wechat-qr.jpg" alt="WeChat QR code for 星塔学术" width="260">
 
-Follow the WeChat Official Account:
+Follow the WeChat Official Account **星塔学术** (scan the QR code, or search for it in WeChat) for walkthroughs and updates:
 
-<img src="assets/wechat-official-account-qr.png" alt="WeChat Official Account QR code for 星塔学术" width="520">
+<img src="assets/wechat-official-account-qr.png" alt="WeChat Official Account QR code for 星塔学术 · StarTower Academic" width="260">
 
 ## Contributing
 
@@ -127,6 +127,10 @@ Contributions are welcome if they make the workflow clearer, more practical, or 
 
 `skills/*/references/` are copies of the root `references/`, which is the authoritative version. When you change a file in the root `references/`, copy it into every skill folder and run `bash scripts/check_references_sync.sh` (it exits non-zero if any copy differs).
 
+## Related Projects
+
+- [xingta-polish-en](https://github.com/xingtaxueshu/xingta-polish-en): a fidelity-first agent skill for polishing the English of academic paragraphs, from the same team (星塔学术 · StarTower Academic).
+
 ## License
 
-This project is released under the MIT License. See `LICENSE` for the full text.
+This project is released under the MIT License. See `LICENSE` for the full text. Maintained by 星塔学术 · StarTower Academic ([www.xingta.cc](https://www.xingta.cc)).

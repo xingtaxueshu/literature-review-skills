@@ -1,0 +1,59 @@
+name: 使用反馈 / Usage feedback
+description: 告诉我们你怎么用的、哪一步有问题 / Tell us how you used it and where it went wrong
+title: "[反馈] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请**不要**粘贴未发表稿件的全文或可识别个人的信息；如需提供样例，请先脱敏。
+        Please do not paste full unpublished manuscripts or identifying information; anonymize any sample first.
+  - type: input
+    id: discipline
+    attributes:
+      label: 学科 / Discipline
+      placeholder: 例如：教育学、社会学、历史学
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: 使用的 Agent / 工具 / Agent or tool used
+      placeholder: 例如：Claude Code、Codex、Cursor
+    validations:
+      required: true
+  - type: dropdown
+    id: step
+    attributes:
+      label: 哪一步有问题 / Which step had a problem
+      options:
+        - 1 refine-literature-question
+        - 2 decompose-review-modules
+        - 3 compare-research-methods
+        - 4 map-literature-contradictions
+        - 5 locate-review-research-gap
+        - 来源核验 / 输出契约（待核实清单等）
+        - 安装
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 发生了什么 / What happened
+      description: 你期望的结果和实际结果分别是什么？
+    validations:
+      required: true
+  - type: dropdown
+    id: sample
+    attributes:
+      label: 是否愿意分享脱敏样例 / Willing to share an anonymized sample?
+      options:
+        - 愿意（我会在下方贴出脱敏后的片段）
+        - 暂时不愿意
+        - 视情况而定
+    validations:
+      required: true
+  - type: textarea
+    id: snippet
+    attributes:
+      label: 脱敏样例（可选）/ Anonymized snippet (optional)

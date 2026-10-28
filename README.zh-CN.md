@@ -106,7 +106,7 @@ git clone https://github.com/xingtaxueshu/literature-review-skills.git ~/.agents
 这是早期版本，使用前请先看下面几条。
 
 - **没有评测。** 没有测试集，没有和普通提示词做对照，也没有测过这些 Skills 是否真的提升综述质量。文中描述的作用是设计意图，不是实验结果。
-- **使用反馈没有系统收集。** 这组 Skills 此前已被不少外部作者使用（主要来自公众号推文传播，仓库有 72 star），但使用是自发的，我们没有系统收集反馈，也没有做过对照评测。本次 v0.2.0 的改动尚未在真实稿件上验证。
+- **使用反馈没有系统收集。** 这组 Skills 此前已被不少外部作者使用（主要来自公众号推文传播），但使用是自发的，我们没有系统收集反馈，也没有做过对照评测。本次 v0.2.0 的改动尚未在真实稿件上验证。
 - **示例没有真实文献出处。** `examples/` 只是方法演示，里面的论断是示意性的，不来自具体论文，不能引用。
 - **安装方式没有逐一实测。** `npx skills add`、让 Agent 代装、手动 clone 三种方式，没有在 Claude Code、Codex、Cursor 里逐一验证；`agents/openai.yaml` 同样没有测过。为避免安装器只复制单个 skill 目录时找不到规则文件，每个 skill 目录下都自带一份 `references/` 副本，核心规则在 Guardrails 里也重复写了一遍。
 - **来源核验取决于 Agent 的工具。** 没有联网或检索能力时，Agent 无法核验，只会把来源标为“用户提供”或“未核验”。Crossref、OpenAlex 对中文文献和图书的覆盖不完整。
@@ -116,18 +116,18 @@ git clone https://github.com/xingtaxueshu/literature-review-skills.git ~/.agents
 
 ## 联系方式
 
-如果你想交流使用问题、补充案例，或讨论科研 AI 工作流，可以通过下面方式联系：
+如果你想交流使用问题、补充案例，或讨论科研 AI 工作流，欢迎通过 [GitHub Issues](https://github.com/xingtaxueshu/literature-review-skills/issues/new/choose) 提交使用反馈，也可以通过下面方式联系：
 
 - 微信号：`xingtacc`
 - 邮箱：[xingtaxueshu@outlook.com](mailto:xingtaxueshu@outlook.com)
 
 也可以扫描二维码添加微信：
 
-<img src="assets/wechat-qr.jpg" alt="星塔学术微信二维码" width="320">
+<img src="assets/wechat-qr.jpg" alt="星塔学术微信二维码" width="260">
 
-关注星塔学术微信公众号：
+关注微信公众号 **“星塔学术”**（扫描二维码，或在微信里搜索），可以看到使用演示与更新说明：
 
-<img src="assets/wechat-official-account-qr.png" alt="星塔学术微信公众号二维码" width="520">
+<img src="assets/wechat-official-account-qr.png" alt="星塔学术 · StarTower Academic 微信公众号二维码" width="260">
 
 ## 贡献
 
@@ -137,6 +137,10 @@ git clone https://github.com/xingtaxueshu/literature-review-skills.git ~/.agents
 
 提交修改时，请保持语气克制，避免夸大工具作用。这个项目关心的是研究过程是否更清楚，不是把 AI 包装成学术捷径。
 
+## 相关项目
+
+- [xingta-polish-en](https://github.com/xingtaxueshu/xingta-polish-en)：同一团队的开源项目，面向中文人文社科作者的保真优先英文学术润色 Agent Skill。
+
 ## 许可
 
-本项目使用 MIT License 发布。完整条款见 `LICENSE`。
+本项目使用 MIT License 发布。完整条款见 `LICENSE`。由 星塔学术 · StarTower Academic（[www.xingta.cc](https://www.xingta.cc)）维护。
